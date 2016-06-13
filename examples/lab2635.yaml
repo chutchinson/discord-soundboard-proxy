@@ -1,0 +1,10 @@
+---
+email: ''
+password: ''
+server: 'Lab 2635'
+channel: 'thelab'
+bot: 'Overwatch'
+bindings:
+  ctrl+shift+r: random
+  ctrl+shift+g: goal
+
