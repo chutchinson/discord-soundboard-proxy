@@ -9,8 +9,7 @@ from soundboard import proxy
 
 def get_option_parser():
 
-    parser = OptionParser(
-        'usage: %prog [configuration_file]')
+    parser = OptionParser('usage: %prog')
 
     opts = parser.add_option_group(
         'Configuration',
