@@ -1,5 +1,5 @@
 """
-    Global key binding hooks for the win32 platform.
+Global key binding hooks for the win32 platform.
 """
 
 import ctypes
@@ -158,10 +158,6 @@ class GlobalHookManager:
         return hkid
 
     @staticmethod
-    def wait():
-        user32.WaitMessage()
-
-    @staticmethod
     def poll():
         msg = ctypes.wintypes.MSG()
         user32.WaitMessage()
@@ -214,6 +210,6 @@ class GlobalHookManager:
         """
 
         def decorator(fn):
-            self.register(WM_KEYUP, pattern, fn)
+            self.register(WM_KEYDOWN, pattern, fn)
             return fn
         return decorator
