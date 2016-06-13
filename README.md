@@ -16,9 +16,10 @@ code or use it for your own projects.
 
  - PyYAML >= 3.11
 
-## Build
+## Install
 
     git clone https://github.com/chutchinson/discord-soundboard-proxy
+    cd discord-soundboard-proxy
     python setup.py install
     
 ## Usage
