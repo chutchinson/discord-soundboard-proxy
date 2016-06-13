@@ -1,0 +1,10 @@
+---
+email: 'me@example.com'
+password: 'example'
+server: 'Example'
+channel: 'test'
+bot: 'Soundbot'
+bindings:
+  ctrl+shift+r: random
+  ctrl+n0: goal
+
