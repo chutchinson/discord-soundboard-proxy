@@ -20,6 +20,7 @@ code or use it for your own projects.
 
     git clone https://github.com/chutchinson/discord-soundboard-proxy
     cd discord-soundboard-proxy
+    pip install git+https://github.com/Rapptz/discord.py@async
     python setup.py install
     
 ## Usage
