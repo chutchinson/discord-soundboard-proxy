@@ -127,6 +127,7 @@ class GlobalHookManager:
                         self.modifiers.append(modifier)
                 else:
                     self.key = _hook_key_map[key]
+            self.modifiers.sort()
 
         def call(self, key, modifiers):
             if self.matches(key, modifiers):
@@ -135,7 +136,7 @@ class GlobalHookManager:
         def matches(self, key, modifiers):
             if self.key is None:
                 return True
-            if self.key == key and self.modifiers == modifiers:
+            if self.key == key and self.modifiers == sorted(modifiers):
                 return True
             else:
                 return False
